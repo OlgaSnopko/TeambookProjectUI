@@ -12,6 +12,14 @@ class RegisterPageLocators:
     CREATE_ORGANIZATION_BTN = (By.ID, 'create-account')
 
 
+class LoginPageLocators:
+    LOGIN_EMAIL = (By.XPATH, '/html/body/div/div[2]/div/div[1]/div[2]/div[2]/div[1]/div/div/input')
+    LOGIN_PASSWORD = (By.XPATH, '/html/body/div/div[2]/div/div[1]/div[2]/div[2]/div[2]/div/div/input')
+    LOGIN_BUTTON = (By.CSS_SELECTOR, '#login-button > p')
+    CREATE_BUTTON = (By.CLASS_NAME, 'login__input-side__login-link')
+    FORGOT_PASSWORD_BUTTON = (By.XPATH, '/html/body/div/div[2]/div/div[1]/div[2]/div[2]/div[3]/p')
+
+
 class ActualsPageLocators:
     APPROVE_LOGS_BTN = (By.CSS_SELECTOR, '.dashboard__tb-button > p')
     BULK_APPROVE_BTN = (By.XPATH, '//*[@id="root"]/div[2]/div[2]/div[3]/div[3]')
