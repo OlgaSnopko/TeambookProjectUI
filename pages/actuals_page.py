@@ -12,3 +12,11 @@ class ActualsPage(BasePage):
         self.browser.find_element(*ActualsPageLocators.SELECT_USERS_DROPDOWN).click()
         self.browser.find_element(*ActualsPageLocators.SELECT_USER).click()
         self.browser.find_element(*ActualsPageLocators.BULK_APPROVE_SUBMIT_BTN).click()
+
+    def go_to_actual_page(self):
+        actual_link = self.browser.find_element(*ActualsPageLocators.ACTUALS_LINK)
+        actual_link.click()
+
+    def go_to_log_time(self):
+        log_time = self.browser.find_element(*ActualsPageLocators.LOG_TIME)
+        log_time.click()
