@@ -17,6 +17,3 @@ class ActualsPage(BasePage):
         actual_link = self.browser.find_element(*ActualsPageLocators.ACTUALS_LINK)
         actual_link.click()
 
-    def go_to_log_time(self):
-        log_time = self.browser.find_element(*ActualsPageLocators.LOG_TIME)
-        log_time.click()
