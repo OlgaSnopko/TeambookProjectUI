@@ -1,21 +1,11 @@
-from .base_page import BasePage
+from .login_page import LoginPage
 from .locators import ActualsPageLocators
 from selenium.common import NoSuchElementException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.action_chains import ActionChains
-from .settings import ADMIN_VALID_EMAIL, ADMIN_VALID_PASSWORD
 
 
-class ActualsPage(BasePage):
-    def approve_logs_click(self):
-        self.browser.find_element(*ActualsPageLocators.APPROVE_LOGS_BTN).click()
-
-    def bulk_approve(self):
-        self.browser.find_element(*ActualsPageLocators.BULK_APPROVE_BTN).click()
-        self.browser.find_element(*ActualsPageLocators.SELECT_USERS_DROPDOWN).click()
-        self.browser.find_element(*ActualsPageLocators.SELECT_USER).click()
-        self.browser.find_element(*ActualsPageLocators.BULK_APPROVE_SUBMIT_BTN).click()
-
+class ActualsPage(LoginPage):
     def go_to_actual_page(self):
         actual_link = self.browser.find_element(*ActualsPageLocators.ACTUALS_LINK)
         actual_link.click()
@@ -66,3 +56,39 @@ class ActualsPage(BasePage):
             self.browser.find_element(*ActualsPageLocators.BTN_ADD_NOTE).click()
         except NoSuchElementException:
             print('There are no items in the calendar')
+
+    def open_approve_logs(self):
+        self.browser.find_element(*ActualsPageLocators.APPROVE_LOGS_BTN).click()
+
+    def sort_users(self):
+        self.browser.find_element(*ActualsPageLocators.SORT_USERS_BY_ALPHABET).click()
+        self.browser.find_element(*ActualsPageLocators.SORT_USERS_BY_APPROVAL).click()
+
+    def select_user_worklog(self):
+        self.browser.find_element(*ActualsPageLocators.SELECT_USER_EXAMPLE_2).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_USER_EXAMPLE_1).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_CURRENT_USER).click()
+
+    def select_worklog_month(self):
+        self.browser.find_element(*ActualsPageLocators.LEFT_ARROW).click()
+        self.browser.find_element(*ActualsPageLocators.RIGHT_ARROW).click()
+
+    def select_date_from_picker(self):
+        self.browser.find_element(*ActualsPageLocators.CURRENT_DATE).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_YEAR).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_MONTH).click()
+
+    def unselect_team(self):
+        self.browser.maximize_window()
+        self.browser.find_element(*ActualsPageLocators.SELECT_TEAM_DROPDOWN).click()
+        self.browser.find_element(*ActualsPageLocators.UNCHECK_TEAM).click()
+
+    def bulk_approve(self):
+        self.browser.find_element(*ActualsPageLocators.BULK_APPROVE_BTN).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_USERS_DROPDOWN).click()
+        self.browser.find_element(*ActualsPageLocators.SELECT_USER).click()
+        self.browser.find_element(*ActualsPageLocators.BULK_APPROVE_SUBMIT_BTN).click()
+
+    def download_report(self):
+        self.browser.find_element(*ActualsPageLocators.DOWNLOAD_BTN).click()
+        self.browser.find_element(*ActualsPageLocators.SUBMIT_DOWNLOAD_BTN).click()
