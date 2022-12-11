@@ -5,3 +5,4 @@ ADMIN_VALID_PASSWORD = "teambooktest1"
 url_register_page = 'https://web.teambooktest.com/register'
 url_login_page = 'https://web.teambooktest.com/login'
 url_actuals_page = 'https://web.teambooktest.com/actuals'
+url_projects_page = 'https://web.teambooktest.com/projects'
