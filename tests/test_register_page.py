@@ -5,7 +5,8 @@ from pages.settings import url_register_page
 
 @pytest.mark.skip
 def test_go_to_register(browser):
-    """ Now only one company needs to be created, so the test is skipped """
+    """ Now only one company needs to be created, so the test is skipped. If you run the test again, the test passes,
+but there is an error in the interface that the email has already been used """
     link = url_register_page
     page = RegisterPage(browser, link)
     page.open()
