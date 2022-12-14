@@ -7,8 +7,7 @@ class RegisterPageLocators:
     EMAIL = (By.XPATH, '/html/body/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[1]/div[3]/div/div/input')
     COMPANY_NAME = (By.XPATH, '/html/body/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[1]/div[4]/div/div/input')
     PASSWORD = (By.ID, 'password_field')
-    AGREEMENT_CHECKBOX = (By.XPATH, "//span[@class='MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root "
-                                    "MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-zun73v']")
+    AGREEMENT_CHECKBOX = (By.XPATH, '//*[@id="marketing-accept-checkbox"]')
     CREATE_ORGANIZATION_BTN = (By.ID, 'create-account')
 
 
@@ -71,13 +70,25 @@ class ProjectsPageLocators:
     SEARCH_FIELD = (By.ID, 'filterProjects')
     PROJECT_NAME_SELECT = (By.XPATH, '//*[@id="root"]/div[2]/div/div[4]/div[2]/div/div/div[2]/p')
     ARCHIVE_PROJECT_ICON = (By.ID, 'deleteProjectButton')
-    ARCHIVE_PROJECT_BTN = (By.XPATH, '//button[@class="MuiButton-root MuiButton-text MuiButton-textPrimary '
-                                     'MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root sc-kDDrLX '
-                                     'kjrQkc css-1ujsas3"]')
+    ARCHIVE_PROJECT_BTN = (By.XPATH, '/html/body/div[5]/div[3]/div/div[2]/button/p[text()="Archive"]')
     FILTER_PROJECTS_BY_ACTIVITY = (By.XPATH, '//*[@id="root"]/div[2]/div/div[2]/div[1]/div[2]/div/div/div[1]')
     SELECT_ARCHIVE_PROJECTS = (By.XPATH, '//div[text()="Archived"]')
     SELECT_ARCHIVE_PROJECT_CHECKBOX = (By.ID, 'selectProject')
     DELETE_ARCHIVE_PROJECT_ICON = (By.XPATH, '//*[@id="root"]/div[2]/div/div[3]/img[1]')
     DELETE_PROJECT_BTN = (By.XPATH, '//p[text()="Delete"]')
+    MANAGE_CLIENTS_BTN = (By.XPATH, '//*[@id="root"]/div[2]/div/div[2]/div[2]/button[2]')
+    CREATE_CLIENT_BTN = (By.ID, 'createClient')
+    CLIENT_NAME = (By.ID, 'nameClient')
+    CLIENT_EMAIL = (By.ID, 'emailClient')
+    CLIENT_PHONE = (By.ID, 'phoneNumberClient')
+    SAVE_CLIENT_BTN = (By.ID, 'saveClient')
+    SEARCH_CLIENT_FIELD = (By.ID, ':rb:')
+    EDIT_CLIENT_BTN = (By.ID, 'editClient')
+    EDIT_CLIENT_NAME = (By.ID, 'editNameClient')
+    EDIT_CLIENT_EMAIL = (By.ID, 'editEmailClient')
+    EDIT_CLIENT_PHONE = (By.ID, 'editPhoneClient')
+    SAVE_EDIT_CLIENT_BTN = (By.ID, 'saveEditClient')
+    DELETE_CLIENT_ICON = (By.ID, 'deleteClient')
+    DELETE_CLIENT_BTN = (By.XPATH, '//div[3]/div/div[2]/button/p')
     
     
