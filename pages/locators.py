@@ -90,79 +90,79 @@ class ProjectsPageLocators:
     SAVE_EDIT_CLIENT_BTN = (By.ID, 'saveEditClient')
     DELETE_CLIENT_ICON = (By.ID, 'deleteClient')
     DELETE_CLIENT_BTN = (By.XPATH, '//div[3]/div/div[2]/button/p')
-    
-    
+
+
 class UsersPageLocators:
-    CREATE_NEW_USER_BUTTON=(By.CSS_SELECTOR,"#root > div.App > div > div.filter-row > div.filter-row__right-side > "
-                                            "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
-                                            "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc"
-                                            ".mobile_hidden.filter-row__add-user-button.css-1ujsas3 > p > div > p")
-    FIRST_NAME_BUTTON = (By.ID,'userFirstName')
-    LAST_NAME_BUTTON = (By.ID,'userLastName')
-    EMAIL_BUTTON = (By.ID,'userEmail')
-    TEAMS_BUTTON=(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.form-create.css-126xj0f > "
-                                  "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                  "div.MuiDialogContent-root.css-1ty026z > div.user-form__left-side > "
-                                  "div.user-form__teams-select.creating > div > div > "
-                                  "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
-    CHOOSE_COMPANY=(By.ID,'react-select-3-option-0')
-    TAGS_BUTTON=(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.form-create.css-126xj0f > "
-                                 "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                 "div.MuiDialogContent-root.css-1ty026z > div.user-form__left-side > "
-                                 "div.user-form__tags-select > div > div > "
-                                 "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
-    PHONE_NUMBER=(By.ID,'userPhoneNumber')
-    CREATE_BUTTON = (By.CSS_SELECTOR,"#createUser > p")
-    OPEN_EDIT_FORM= (By.XPATH,"//p[contains(.,'Alla Vaserman')]")
-    EDIT_USER_BUTTON =(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.form-show.css-126xj0f > "
-                                       "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                       "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > button > p")
-    USER_ROLE_BUTTON=(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.form-edit.css-126xj0f > "
-                                      "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                      "div.MuiDialogContent-root.css-1ty026z > div.user-form__right-side > "
-                                      "div:nth-child(3) > div:nth-child(2) > div > div > "
-                                      "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
-    CHOOSE_USER_ROLE=(By.ID,'react-select-6-option-1')
-    SAVE_BUTTON =(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.form-edit.css-126xj0f > "
-                                  "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                  "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
-                                  "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium"
-                                  ".MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.user-form__edit"
-                                  "-button.css-1ujsas3 > p")
-    DELETE_BUTTON=(By.XPATH, "(//img[@ id='deleteUserButton'])[2]")
+    CREATE_NEW_USER_BUTTON = (By.CSS_SELECTOR, "#root > div.App > div > div.filter-row > div.filter-row__right-side > "
+                                               "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
+                                               "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc"
+                                               ".mobile_hidden.filter-row__add-user-button.css-1ujsas3 > p > div > p")
+    FIRST_NAME_BUTTON = (By.ID, 'userFirstName')
+    LAST_NAME_BUTTON = (By.ID, 'userLastName')
+    EMAIL_BUTTON = (By.ID, 'userEmail')
+    TEAMS_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.form-create.css-126xj0f > "
+                                     "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                     "div.MuiDialogContent-root.css-1ty026z > div.user-form__left-side > "
+                                     "div.user-form__teams-select.creating > div > div > "
+                                     "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
+    CHOOSE_COMPANY = (By.ID, 'react-select-3-option-0')
+    TAGS_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.form-create.css-126xj0f > "
+                                    "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                    "div.MuiDialogContent-root.css-1ty026z > div.user-form__left-side > "
+                                    "div.user-form__tags-select > div > div > "
+                                    "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
+    PHONE_NUMBER = (By.ID, 'userPhoneNumber')
+    CREATE_BUTTON = (By.CSS_SELECTOR, "#createUser > p")
+    OPEN_EDIT_FORM = (By.XPATH, "//p[contains(.,'Alla Vaserman')]")
+    EDIT_USER_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.form-show.css-126xj0f > "
+                                         "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                         "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > button > p")
+    USER_ROLE_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.form-edit.css-126xj0f > "
+                                         "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                         "div.MuiDialogContent-root.css-1ty026z > div.user-form__right-side > "
+                                         "div:nth-child(3) > div:nth-child(2) > div > div > "
+                                         "div.user-form__select-value__indicators.css-1wy0on6 > div > svg")
+    CHOOSE_USER_ROLE = (By.ID, 'react-select-6-option-1')
+    SAVE_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.form-edit.css-126xj0f > "
+                                    "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                    "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
+                                    "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium"
+                                    ".MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.user-form__edit"
+                                    "-button.css-1ujsas3 > p")
+    DELETE_BUTTON = (By.XPATH, "(//img[@ id='deleteUserButton'])[2]")
 
-    DEACTIVATE_BUTTON= (By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.sc-idiyUo.bYuqGB.css-126xj0f > "
-                                        "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                        "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
-                                        "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
-                                        "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.css"
-                                        "-1ujsas3 > p")
-    ACTIVE_BUTTON=(By.CSS_SELECTOR,"#root > div.App > div > div.filter-row > div.filter-row__left-side > "
-                                   "div.deactivate-dropdown__container > div > div > "
-                                   "div.deactivate-dropdown__indicators.css-1wy0on6 > div > img")
-    DEACTIVATE_DROPDOWN=(By.XPATH,"//div[@id='react-select-2-option-1']")
-    SELECT_USER_FOR_ACTIVATE=(By.ID,'selectUser')
-    RACTIVATE_ICON=(By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-buttons > img:nth-child(3)")
-    REACTIVATE_BUTTON=(By.CSS_SELECTOR,"body > div.MuiModal-root.MuiDialog-root.sc-idiyUo.bYuqGB.css-126xj0f > "
-                                       "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
-                                       "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
-                                       "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
-                                       "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.css"
-                                       "-1ujsas3 > p")
+    DEACTIVATE_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.sc-idiyUo.bYuqGB.css-126xj0f > "
+                                          "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                          "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
+                                          "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
+                                          "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.css"
+                                          "-1ujsas3 > p")
+    ACTIVE_BUTTON = (By.CSS_SELECTOR, "#root > div.App > div > div.filter-row > div.filter-row__left-side > "
+                                      "div.deactivate-dropdown__container > div > div > "
+                                      "div.deactivate-dropdown__indicators.css-1wy0on6 > div > img")
+    DEACTIVATE_DROPDOWN = (By.XPATH, "//div[@id='react-select-2-option-1']")
+    SELECT_USER_FOR_ACTIVATE = (By.ID, 'selectUser')
+    RACTIVATE_ICON = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-buttons > img:nth-child(3)")
+    REACTIVATE_BUTTON = (By.CSS_SELECTOR, "body > div.MuiModal-root.MuiDialog-root.sc-idiyUo.bYuqGB.css-126xj0f > "
+                                          "div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > "
+                                          "div.MuiDialogActions-root.MuiDialogActions-spacing.css-14b29qc > "
+                                          "button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton"
+                                          "-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.sc-kDDrLX.kjrQkc.css"
+                                          "-1ujsas3 > p")
 
-    EXPORT_BUTTON= (By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-buttons > img:nth-child(3)")
-    CHECK_BOX_USER=(By.CSS_SELECTOR,"#selectUser")
-    SORT_BY_NAME_BUTTON = (By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-content > "
-                                           "div.users-page__user-list-header > "
-                                           "div.users-page__user-list-header-value.name > div > p")
-    SORT_BY_ROLE = (By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-content > "
-                                    "div.users-page__user-list-header > div.users-page__user-list-header-value.role >"
-                                    " div > p")
-    FILTER_INPUT = (By.ID,'filterUsers')
-    OPEN_EDIT_FORM1 = (By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-content > "
-                                       "div.users-page__user-list > div:nth-child(1) > div > "
-                                       "div.users-block__avatar-container > p")
-    DELETE_ICON=(By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-buttons > img:nth-child(1)")
-    DELETE_BUTTON_IN_DELETE_FORM=(By.CSS_SELECTOR,".MuiButton-text:nth-child(1) > p")
-    SELECT_USER_CHECK_BOX = (By.ID,'selectUser')
-    DEACTIVATE_ICON = (By.CSS_SELECTOR,"#root > div.App > div > div.users-page__users-buttons > img:nth-child(2)")
+    EXPORT_BUTTON = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-buttons > img:nth-child(3)")
+    CHECK_BOX_USER = (By.CSS_SELECTOR, "#selectUser")
+    SORT_BY_NAME_BUTTON = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-content > "
+                                            "div.users-page__user-list-header > "
+                                            "div.users-page__user-list-header-value.name > div > p")
+    SORT_BY_ROLE = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-content > "
+                                     "div.users-page__user-list-header > div.users-page__user-list-header-value.role >"
+                                     " div > p")
+    FILTER_INPUT = (By.ID, 'filterUsers')
+    OPEN_EDIT_FORM1 = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-content > "
+                                        "div.users-page__user-list > div:nth-child(1) > div > "
+                                        "div.users-block__avatar-container > p")
+    DELETE_ICON = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-buttons > img:nth-child(1)")
+    DELETE_BUTTON_IN_DELETE_FORM = (By.CSS_SELECTOR, ".MuiButton-text:nth-child(1) > p")
+    SELECT_USER_CHECK_BOX = (By.ID, 'selectUser')
+    DEACTIVATE_ICON = (By.CSS_SELECTOR, "#root > div.App > div > div.users-page__users-buttons > img:nth-child(2)")
