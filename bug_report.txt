@@ -1,7 +1,7 @@
 1. Implemented checking for name uniqueness, but users can have the same name
 STR:
 1.1 Create a user named INGAa NEVSKAYA
-1.2 Create a user named INGAa NEVSKAYA again? but change email
+1.2 Create a user named INGAa NEVSKAYA again, but change email
 AR: error that a user with the same name has already been created :
 "There was an error:
 User with this name already exists."
