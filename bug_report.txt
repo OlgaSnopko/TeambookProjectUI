@@ -1,0 +1,22 @@
+1. Implemented checking for name uniqueness, but users can have the same name
+STR:
+1.1 Create a user named INGAa NEVSKAYA
+1.2 Create a user named INGAa NEVSKAYA again? but change email
+AR: error that a user with the same name has already been created :
+"There was an error:
+User with this name already exists."
+ER: There should not be a check for the uniqueness of the user's name, since a user can have the same first and last name
+--------------
+2. Icon "reinvite" and "urn" on the "edit page" the user has the same id, css, xpath locators, they can only be
+distinguished by full XPath
+
+--------------
+3.After refreshing the page, which displays the list of deactivated users, the list of active users starts to be displayed
+Precondition: the user is authorized in the personal account
+STR:
+3.1 Go to Users page = by default, a list of active users is displayed
+3.2 Open the list of Deactivate usrs
+3.3 Refresh the page
+AR: the list of active users starts to be displayed
+ER: after refreshing the page with deactivated users, the page with deactivated  users continues to be displayed
+---------------
