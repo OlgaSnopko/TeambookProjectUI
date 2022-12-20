@@ -84,7 +84,6 @@ def test_sort_by_role(browser):
     time.sleep(3)
 
 
-
 def test_export_users(browser):
     login(browser)
     time.sleep(3)
